@@ -14,7 +14,6 @@ const TableBody = ({
   showToolTip,
   toolTipPosition = "top",
   toolTipContent = "View details",
-  linkTo,
 }) => {
   return (
     <tbody className={TableBodyStyles?.tableBodyCover}>

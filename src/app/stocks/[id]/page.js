@@ -1,6 +1,6 @@
 import React from "react";
 
-import StocksDetailsPage from "@/screens/Dashboard/StockDetails";
+import { StockDetailsPage } from "@/dashboard";
 import { GlobalContextProvider } from "@/context/store";
 
 // export async function generateStaticParams() {
@@ -14,7 +14,7 @@ export const metadata = {
 const StockDetails = ({ params: { id } }) => {
   return (
     <GlobalContextProvider serverSideStockId={id}>
-      <StocksDetailsPage serverSideStockId={id} />
+      <StockDetailsPage serverSideStockId={id} />
     </GlobalContextProvider>
   );
 };

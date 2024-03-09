@@ -17,8 +17,6 @@ const DashboardHeader = ({ handleToggleHamburger }) => {
     setIsOptionsOpen(false);
   }, [pathname]);
 
-  const profile = "";
-
   return (
     <div className={DashboardHeaderStyle.dashboardHeader}>
       <div className={DashboardHeaderStyle.dashboardHeader__activityBar}>

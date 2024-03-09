@@ -1,7 +1,6 @@
 import { GlobalContextProvider } from "@/context/store";
 import { getStocks } from "@/utils/getStocks";
 
-import "bootstrap/dist/css/bootstrap.css";
 import styles from "./globals.module.scss";
 
 export const metadata = {

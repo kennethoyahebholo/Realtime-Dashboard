@@ -1,4 +1,4 @@
-import { HomePage } from "@/screens/Dashboard";
+import { HomePage } from "@/dashboard";
 
 // meta data format
 // export const metadata = {

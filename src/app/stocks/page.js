@@ -1,5 +1,5 @@
 import React from "react";
-import StocksPage from "@/screens/Dashboard/Stocks";
+import { StocksPage } from "@/dashboard";
 
 export const metadata = {
   title: "Stocks",

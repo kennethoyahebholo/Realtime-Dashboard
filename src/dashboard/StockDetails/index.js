@@ -4,7 +4,7 @@ import React from "react";
 
 import { PageHeader } from "@/components";
 import { useGlobalContext } from "@/context/store";
-import { DashboardLayout } from "@/screens/Dashboard/_partials";
+import { DashboardLayout } from "@/dashboard/_partials";
 import {
   BarChartCanvas,
   PieChartCanvas,

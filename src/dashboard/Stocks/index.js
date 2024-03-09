@@ -3,7 +3,7 @@
 import React from "react";
 
 import { useGlobalContext } from "@/context/store";
-import { DashboardLayout } from "@/screens/Dashboard/_partials";
+import { DashboardLayout } from "@/dashboard/_partials";
 import { PageHeader } from "@/components";
 import { AllStocks } from "./_partials";
 
