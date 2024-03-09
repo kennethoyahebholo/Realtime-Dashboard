@@ -1,0 +1,43 @@
+@font-face {
+  font-family: ExoLight;
+  src: url("../assets/fonts/Exo/static/Exo-Light.ttf");
+}
+
+@font-face {
+  font-family: ExoMedium;
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf");
+}
+
+@font-face {
+  font-family: ExoBold;
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf");
+}
+
+@font-face {
+  font-family: ExoSemiBold;
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: ExoRegular;
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf");
+}
+
+@font-face {
+  font-family: ExoThin;
+  src: url("../assets/fonts/Exo/static/Exo-Thin.ttf");
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+
+  &__content {
+    max-width: 2000px;
+    margin: auto;
+    @media (max-width: 350px) {
+      max-width: 350px !important;
+      margin: auto;
+    }
+  }
+}

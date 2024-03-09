@@ -9,7 +9,7 @@ export const metadata = {
 //   // return dynamic id for better optimization
 // }
 
-// dynamic meta data; ? can only be exported from a server component.
+// dynamic meta data; can only be exported from a server component.
 // export async function generateMetadata() {
 //   return {
 //     title: "",

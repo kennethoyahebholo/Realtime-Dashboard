@@ -1,12 +1,13 @@
-import TableHeader from "./_partials/TableHeader";
-import TableBody from "./_partials/TableBody";
-import Pagination from "./_partials/Pagination";
-import MobileViewTable from "./_partials/MobileViewTable";
-import EmptyTableRecord from "./_partials/EmptyTableRecord";
-import AppLoadingState from "../AppLoadingState";
 import Empty from "@/assets/images/empty.png";
 
 import AppTableStyles from "./AppTable.module.scss";
+import {
+  EmptyTableRecord,
+  MobileViewTable,
+  Pagination,
+  TableBody,
+  TableHeader,
+} from "./_partials";
 
 const AppTable = ({
   content,

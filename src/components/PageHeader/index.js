@@ -1,4 +1,4 @@
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 import toTitleCase from "@/utils/toTitleCase";
 
@@ -6,20 +6,18 @@ import BackIcon from "@/assets/svg_components/BackIcon";
 
 import PageHeaderStyle from "./PageHeader.module.scss";
 
-const PageHeader = ({ title, name, subTitle, hasBackButton }) => {
-  const router = useRouter();
-
+const PageHeader = ({ title, name, subTitle, hasBackButton, linkBackTo }) => {
   return (
     <div className={PageHeaderStyle.pageHeader}>
       <div className={PageHeaderStyle.pageHeader__content}>
         <div className={PageHeaderStyle.pageHeader__top}>
           {hasBackButton && (
-            <span
+            <Link
+              href={linkBackTo}
               className={PageHeaderStyle.pageHeader__backIcon}
-              onClick={() => router.push(-1)}
             >
               <BackIcon />
-            </span>
+            </Link>
           )}
           <h4 className={PageHeaderStyle.pageHeader__name}>
             <span className={PageHeaderStyle.pageHeader__title}>

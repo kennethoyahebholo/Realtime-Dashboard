@@ -47,7 +47,7 @@ const AllStocks = ({ content }) => {
   const allColumnForMobile = [
     "companyName",
     ["symbol", "price"],
-    ["profit", "loss"],
+    ["profit", ""],
   ];
 
   const onButtonClick = (content) => {

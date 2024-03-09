@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import truncateData from "@/utils/truncateData";
 
@@ -10,27 +9,24 @@ const MobileViewTable = ({ content, allowKeyArr, hasOnclick }) => {
     const checkIfEleIsArray = Array?.isArray(list);
 
     return (
-      <div key={index} className={MobileViewTableStyles?.mobileViewDataCover}>
-        <Link
-          href={{
-            pathname: "/dashboard/stocks/stock-details",
-            query: { id: `${content?.id}` },
-          }}
-        >
-          {checkIfEleIsArray &&
-            list?.map((values, indexData) => {
-              return (
-                <div
-                  key={indexData}
-                  className={
-                    MobileViewTableStyles?.mobileViewDataCover__mobileViewDoubleRec
-                  }
-                >
-                  {truncateData(content?.[values], 16)}
-                </div>
-              );
-            })}
-        </Link>
+      <div
+        key={index}
+        className={MobileViewTableStyles?.mobileViewDataCover}
+        onClick={() => hasOnclick?.(content)}
+      >
+        {checkIfEleIsArray &&
+          list?.map((values, indexData) => {
+            return (
+              <div
+                key={indexData}
+                className={
+                  MobileViewTableStyles?.mobileViewDataCover__mobileViewDoubleRec
+                }
+              >
+                {truncateData(content?.[values], 16)}
+              </div>
+            );
+          })}
       </div>
     );
   });

@@ -11,7 +11,8 @@ import {
   DomainRadarChart,
   AreaChartCanvas,
 } from "./_partials";
-import formatCash from "@/utils/formatAmount";
+
+import styles from "./styles.module.scss";
 
 // Override console.error
 // This is a hack to suppress the warning about missing defaultProps in recharts library as of version 2.12
@@ -35,55 +36,37 @@ const StockDetails = ({ serverSideStockId }) => {
       price: selectedStock?.price,
       profit: selectedStock?.profit,
       loss: selectedStock?.loss,
-      // price: selectedStock?.price.toFixed(2),
-      // profit: selectedStock?.profit.toFixed(2),
-      // loss: selectedStock?.loss.toFixed(2),
     },
   ];
 
   return (
     <DashboardLayout>
-      <PageHeader title="Real-Time Data" name={selectedStock?.companyName} />
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          flex: "1",
-          alignItems: "center",
-          height: "500px",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            flex: ".4",
-            height: "100%",
-            width: "100%",
-          }}
-        >
-          <BarChartCanvas data={data} />
+      <PageHeader
+        hasBackButton
+        linkBackTo="/stocks"
+        title="Real-Time Data"
+        name={selectedStock?.companyName}
+      />
+      <div className={styles.wrapper}>
+        <div className={styles.wrapper__chartContainer}>
+          <div className={styles.wrapper__chart}>
+            <h4>Bar Chart</h4>
+            <BarChartCanvas data={data} />
+          </div>
+          <div className={styles.wrapper__chart}>
+            <h4>Area Chart</h4>
+            <AreaChartCanvas data={data} />
+          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            height: "100%",
-            width: "100%",
-            flex: ".3",
-          }}
-        >
-          <PieChartCanvas data={data} />
-          <DomainRadarChart data={data} />
-        </div>
-        <div
-          style={{
-            height: "300px",
-            width: "100%",
-            flex: ".3",
-          }}
-        >
-          <AreaChartCanvas data={data} />
+        <div className={styles.wrapper__chartContainer}>
+          <div className={styles.wrapper__chart}>
+            <h4>Pie Chart</h4>
+            <PieChartCanvas data={data} />
+          </div>
+          <div className={styles.wrapper__chart}>
+            <h4>Domain Radar Chart</h4>
+            <DomainRadarChart data={data} />
+          </div>
         </div>
       </div>
     </DashboardLayout>

@@ -1,7 +1,7 @@
+import Image from "next/image";
 import React from "react";
 
 import EmptyTableRecordStyle from "./EmptyTableRecord.module.scss";
-import Image from "next/image";
 
 const EmptyTableRecord = ({ icon, title, subtitle }) => {
   return (

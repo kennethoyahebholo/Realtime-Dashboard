@@ -1,9 +1,8 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { GlobalContextProvider } from "@/context/store";
 import { getStocks } from "@/utils/getStocks";
 
-const inter = Inter({ subsets: ["latin"] });
+import "bootstrap/dist/css/bootstrap.css";
+import styles from "./globals.module.scss";
 
 export const metadata = {
   title: {
@@ -14,6 +13,12 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default async function RootLayout({ children }) {
@@ -27,10 +32,12 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <GlobalContextProvider serverSideStocksData={stocks}>
-          {children}
-        </GlobalContextProvider>
+      <body className={styles.body}>
+        <div className={styles.body__content}>
+          <GlobalContextProvider serverSideStocksData={stocks}>
+            {children}
+          </GlobalContextProvider>
+        </div>
       </body>
     </html>
   );
