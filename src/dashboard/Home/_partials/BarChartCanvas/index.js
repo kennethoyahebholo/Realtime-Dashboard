@@ -15,7 +15,7 @@ import styles from "./BarChartCanvas.module.scss";
 const BarChartCanvas = ({ data }) => {
   return (
     <div className={styles.wrapper}>
-      <h2>Bar Chart</h2>
+      <h2 className={styles.wrapper__title}>Bar Chart</h2>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           width={500}

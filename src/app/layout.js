@@ -1,6 +1,8 @@
+import { Inter } from "next/font/google";
 import { GlobalContextProvider } from "@/context/store";
 import { getStocks } from "@/utils/getStocks";
 
+import "./globals.css";
 import styles from "./globals.module.scss";
 
 export const metadata = {
@@ -12,12 +14,6 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
   },
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
 };
 
 export default async function RootLayout({ children }) {

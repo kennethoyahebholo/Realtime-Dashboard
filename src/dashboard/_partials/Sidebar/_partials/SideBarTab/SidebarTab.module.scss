@@ -10,6 +10,7 @@
     color: blanchedalmond;
     display: flex;
     align-items: center;
+    font-family: ExoSemibold;
     &--inactive {
       user-select: none;
       padding-top: 18px;
@@ -19,6 +20,7 @@
       font-size: 14px;
       color: #7f8091;
       cursor: pointer;
+      font-family: ExoLight;
     }
   }
 

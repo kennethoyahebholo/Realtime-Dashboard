@@ -14,7 +14,7 @@ import styles from "./AreaChartCanvas.module.scss";
 export const AreaChartCanvas = ({ data }) => {
   return (
     <div className={styles.wrapper}>
-      <h2>Area Chart</h2>
+      <h2 className={styles.wrapper__title}>Area Chart</h2>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={730}

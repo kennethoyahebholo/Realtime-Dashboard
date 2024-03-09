@@ -50,21 +50,21 @@ const StockDetails = ({ serverSideStockId }) => {
       <div className={styles.wrapper}>
         <div className={styles.wrapper__chartContainer}>
           <div className={styles.wrapper__chart}>
-            <h4>Bar Chart</h4>
+            <h4 className={styles.wrapper__title}>Bar Chart</h4>
             <BarChartCanvas data={data} />
           </div>
           <div className={styles.wrapper__chart}>
-            <h4>Area Chart</h4>
+            <h4 className={styles.wrapper__title}>Area Chart</h4>
             <AreaChartCanvas data={data} />
           </div>
         </div>
         <div className={styles.wrapper__chartContainer}>
           <div className={styles.wrapper__chart}>
-            <h4>Pie Chart</h4>
+            <h4 className={styles.wrapper__title}>Pie Chart</h4>
             <PieChartCanvas data={data} />
           </div>
           <div className={styles.wrapper__chart}>
-            <h4>Domain Radar Chart</h4>
+            <h4 className={styles.wrapper__title}>Domain Radar Chart</h4>
             <DomainRadarChart data={data} />
           </div>
         </div>
