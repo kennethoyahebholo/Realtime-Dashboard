@@ -11,8 +11,8 @@ function sendStockUpdates() {
     // Simulate price changes
     stock.price += Math.random() * 10 - 5;
     // Simulate profit and loss changes
-    stock.profit += Math.random() * 10000 - 5000;
-    stock.loss += Math.random() * 5000 - 2500;
+    stock.profit += Math.random() * 10000 - 900;
+    stock.loss += Math.random() * 5000 - 800;
   });
 
   // Stringify the entire array of stocks with updated prices
