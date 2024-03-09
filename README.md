@@ -40,3 +40,15 @@ Real-time updates are achieved using WebSockets. The WebSocket server sends live
 - **SEO**: To optimize for SEO, dynamic routes are implemented for stock details pages, ensuring each page is crawlable by search engines. Metadata is provided for each page to improve search engine visibility.
 
 - **Performance Optimization**: Performance optimizations include code splitting, image optimization, and server-side caching. This ensures fast page load times and a smooth user experience.
+
+- **Build and Deployment**: Once the development is complete, you can build the project using:
+
+npm run build
+
+Then, to run the built package, use:
+
+npm start
+
+This command will start the production server with the optimized build.
+
+This addition provides users with instructions on how to build and deploy the project for production.
