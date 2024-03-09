@@ -11,6 +11,7 @@
     font-size: 13px;
     line-height: 16px;
     color: #d9d9d9;
+    font-family: ExoRegular;
   }
 
   &__tableTooltip {
@@ -20,5 +21,6 @@
     padding: 8px 12px !important;
     border-radius: 4px !important;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05) !important;
+    font-family: ExoRegular !important;
   }
 }
