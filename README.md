@@ -7,6 +7,7 @@ This project is a real-time dashboard application built with Next.js, featuring 
 1. **Clone the Repository**:
 
 git clone https://github.com/kennethoyahebholo/Realtime-Dashboard.git
+
 cd Realtime-Dashboard
 
 2. **Install Dependencies**:
@@ -16,6 +17,7 @@ npm install
 3. **Run the Project**:
 
 npm run dev
+
 This command will start both the Next.js development server and the WebSocket server.
 
 4. **Access the Application**:
