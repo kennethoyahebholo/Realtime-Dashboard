@@ -14,6 +14,10 @@ cd Realtime-Dashboard
 
 npm install
 
+This command will install all the necessary dependencies for the project. If you encounter any issues with npm version compatibility, ensure you have node version 18 or higher installed. Alternatively, you can use Node Version Manager (NVM) to manage multiple versions of Node.js on your machine.
+
+To install NVM, follow the instructions provided on the official NVM repository: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+
 3. **Run the Project**:
 
 npm run dev
