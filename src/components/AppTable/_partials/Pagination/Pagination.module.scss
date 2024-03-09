@@ -1,0 +1,128 @@
+.pagination {
+  background: #fff;
+  box-shadow: 0px 12px 20px 3px rgba(223, 224, 235, 0.02);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0px 13px 0px;
+
+  &__pageCount {
+    display: none;
+  }
+
+  &__pageNum {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    color: #475467;
+  }
+
+  &__pageTotal {
+    font-weight: 400;
+    font-size: 12px;
+    color: #98a2b3;
+    margin-left: 8px;
+    display: block;
+  }
+
+  &__pagination {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 0 !important;
+    .prev,
+    .next {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      border-radius: 4px;
+    }
+  }
+
+  &__active {
+    border-radius: 4px;
+    color: #523b9f;
+    a {
+      color: #523b9f;
+    }
+  }
+
+  &__breakMe {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+    margin: 0 0.5em;
+    a {
+      font-size: 0.9em;
+      color: #98a2b3;
+    }
+  }
+
+  &__eachPage {
+    height: 20px;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5em;
+    a {
+      font-weight: 400;
+      font-size: 12px;
+      color: #98a2b3;
+    }
+  }
+
+  &__goToPage {
+    font-weight: 400;
+    font-size: 12px;
+    color: #98a2b3;
+    margin-left: 8px;
+    cursor: pointer;
+    &:hover {
+      color: #1d2939;
+    }
+  }
+
+  &__goToPage:hover {
+    color: #1d2939;
+  }
+
+  &__input {
+    border: 1px solid #f2f4f7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 21px;
+    height: 21px;
+    color: #fff;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 10px;
+    outline: none;
+  }
+  &__input::-webkit-outer-spin-button,
+  &__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &__input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  @media (min-width: 500px) {
+    padding: 13px 32px;
+    &__pageCount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

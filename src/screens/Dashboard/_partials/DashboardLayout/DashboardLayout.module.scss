@@ -1,0 +1,58 @@
+.dashboardLayout {
+  overflow: hidden;
+
+  &__sidebar {
+    display: none;
+  }
+
+  &__body {
+    overflow: hidden auto;
+    width: 100%;
+    background: rgb(36, 33, 33);
+  }
+
+  &__children {
+    padding: 16px;
+    height: calc(100vh - 60px);
+    overflow: hidden auto;
+  }
+
+  &__sidebarMobile {
+    display: block;
+    height: 100vh;
+    min-width: 257px;
+    max-width: 257px;
+    background: #fcfcfc;
+    border-right: 1px solid #d9dbe9;
+    position: absolute;
+    top: 60px;
+    z-index: 60;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__children {
+      padding: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    &__sidebarMobile {
+      display: none;
+    }
+
+    &__sidebar {
+      display: block;
+      height: 100vh;
+      min-width: 257px;
+      max-width: 257px;
+      background: #fcfcfc;
+      border-right: 1px solid blanchedalmond;
+    }
+
+    &__body {
+      overflow: hidden auto;
+    }
+  }
+}

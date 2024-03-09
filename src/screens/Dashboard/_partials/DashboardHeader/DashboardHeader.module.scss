@@ -1,0 +1,222 @@
+@keyframes dropDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dashboardHeader {
+  position: relative;
+
+  &__activityBar {
+    width: 100%;
+    background: rgba(255, 235, 205, 0.593);
+    box-shadow: 0px 0px 10px 0px rgba(32, 32, 32, 0.08);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 99999;
+  }
+
+  &__statusBar {
+    width: 100%;
+    padding: 13px;
+    background: #f57200;
+    user-select: none;
+    z-index: 99998;
+    animation: dropDown 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  &__statusText {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__statusHighlight {
+    font-weight: 600;
+  }
+
+  &__statusCta {
+    color: #fcfcfd;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__statusCtaArrow {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+
+  &__left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__hamburger {
+    margin-right: 10px;
+  }
+
+  &__clickable {
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  &__divider {
+    width: 1px;
+    height: 36px;
+    background-color: #eaecf0b2;
+    margin-right: 16px;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatarGroup {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatarImage > img {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  &__avatarArrow {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+
+    &--active {
+      display: inline-block;
+      transform: rotate(-90deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__options {
+    z-index: 40000000;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    min-width: 232px;
+    max-width: 232px;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 8px 16px;
+    background: var(--others-white, rgb(255, 235, 205));
+    box-shadow: 10px 25px 100px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &__optionsNameGroup {
+    padding: 17px 0;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  &__optionsTitle {
+    width: 100%;
+    margin: 0 0 4px 0;
+    color: #1a202c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__optionsStatus {
+    width: 100%;
+    color: #718096;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__optionsRouteGroup {
+    padding: 20px 0;
+  }
+
+  &__optionsSettings {
+    display: flex;
+    align-items: center;
+    margin: 0 0 23px 0;
+    text-decoration: none;
+    color: #1a202c;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+  }
+
+  &__optionsExit {
+    @extend .dashboardHeader__optionsSettings;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &__optionsIcon {
+    margin: 0 12px 0 0;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    &__activityBar {
+      justify-content: flex-end;
+      padding-right: 35px;
+    }
+
+    &__statusText {
+      text-align: center;
+    }
+
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      width: 100%;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__options {
+      position: absolute;
+      top: 60px;
+      right: 35px;
+    }
+  }
+}

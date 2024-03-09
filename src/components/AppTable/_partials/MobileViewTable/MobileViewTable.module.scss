@@ -1,0 +1,21 @@
+.mobileViewDataCover {
+  &__mobileViewImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+  &__mobileViewDoubleRec:first-child {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+  }
+  &__mobileViewDoubleRec:last-child {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9494b8;
+  }
+}

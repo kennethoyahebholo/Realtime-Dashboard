@@ -1,0 +1,28 @@
+.pageHeader {
+  width: 100%;
+  overflow: hidden auto;
+
+  &__top {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__backIcon {
+    cursor: pointer;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+  &__title {
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9494b8;
+  }
+}

@@ -1,0 +1,25 @@
+const ArrowheadIcon = ({ fillColor }) => {
+  return (
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_314_5189)">
+        <path
+          d="M16.7001 10L14.3501 12.35L21.9834 20L14.3501 27.65L16.7001 30L26.7001 20L16.7001 10Z"
+          fill={fillColor}
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_314_5189">
+          <rect width="40" height="40" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export default ArrowheadIcon;

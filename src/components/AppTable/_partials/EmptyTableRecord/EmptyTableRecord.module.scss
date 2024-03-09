@@ -1,0 +1,51 @@
+.emptyTable {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    margin-bottom: 32px;
+    text-align: center;
+    > img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: blanchedalmond;
+    margin-bottom: 6px;
+    text-align: center;
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin-bottom: 35px;
+    color: rgb(250, 239, 223);
+    text-align: center;
+    @media (max-width: 650px) {
+      font-size: 12px;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  &__buttonItem {
+    max-width: 220px;
+    font-size: 12px;
+    padding: 12px auto;
+  }
+}
