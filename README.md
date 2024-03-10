@@ -50,5 +50,3 @@ Then, to run the built package, use:
 npm start
 
 This command will start the production server with the optimized build.
-
-This addition provides users with instructions on how to build and deploy the project for production.
